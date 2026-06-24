@@ -2,7 +2,7 @@
 
 **Amazon review sentiment classification at scale with PySpark (NLP)**
 
-Repository: `7006SCN2526MAYJUL/7006SCN_<Initials>_<SID>`
+Repository: `7006SCN2526MAYJUL/7006SCN_NS_15918017`
 
 ## Problem
 Binary **sentiment classification** from unstructured review **text**: positive (rating 4–5) vs negative (rating 1–2), neutral (3) dropped. Data: Amazon Reviews 2023 (McAuley Lab), **Cell_Phones_and_Accessories** category (~20M reviews).
@@ -32,7 +32,7 @@ Binary **sentiment classification** from unstructured review **text**: positive 
 ## How to run (Google Colab)
 1. Open each notebook; run the **bootstrap** cell (installs `pyspark==3.5.1`) and the **Drive mount** cell.
 2. Run Task1 first (downloads the category `.jsonl.gz` → Parquet). Later notebooks reuse the saved Parquet/models/vocabulary from Drive.
-3. Task3: if free Colab times out, set `TRAIN_FRAC < 1.0` to train on a stratified sample (ingestion/counts still use the full ≥20M for the Big Data requirement).
+3. Task3: if free Colab times out, set `TRAIN_FRAC < 1.0` to train on a stratified sample.
 4. Task4 Spark UI: add a free [ngrok](https://dashboard.ngrok.com) token.
 
 ## Tableau
